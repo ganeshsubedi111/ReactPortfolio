@@ -1,0 +1,113 @@
+
+.Footer {
+  background-color: #212121;
+  color: white;
+  padding: 3rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-right: 4rem;
+}
+
+.location h4,
+.phone h4,
+.email h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.location p,
+.phone p,
+.email p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.right p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  margin: 2rem;
+}
+
+.socialLink {
+  margin: 3rem ;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+.socialLink :hover {
+  color: #007bff;
+  font-size: 30px;
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+
+
+.footer-bottom {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left
+  {
+    width: 100%;
+    text-align: center;
+    margin-left: 2rem;
+    display: flex;
+}
+.left h4{
+  display: flex;
+ 
+}
+
+
+
+.right h4{
+  display: flex;
+}
+
+  .socialLink {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+  }
+}

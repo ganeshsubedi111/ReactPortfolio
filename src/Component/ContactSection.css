@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+  .ContactSection {
+    height: auto;
+    min-height: 100vh;
+  }
+
+
+  .ContactSection h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .Content p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+ .ContactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+}
+
+.ContactSection h1 {
+  font-size: 2rem;
+}
+
+.ContactSection p {
+  font-size: 1.4rem;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
+  max-width: 800px;
+  margin-top: -100px;
+
+
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #e2dbdb;
+}

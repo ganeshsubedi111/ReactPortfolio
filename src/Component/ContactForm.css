@@ -1,0 +1,146 @@
+
+
+.ContactForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  .ContactRight form .error {
+    color: red;
+  }
+  
+  .ContactRight form .success {
+    color: white;
+  }
+  
+  
+  .ContactInfo {
+    flex-basis: 50%;
+    margin-right: 50px;
+    text-align: justify;
+  }
+  
+  .ContactInfo .icon {
+    color: #007bff;
+    font-size: 30px;
+    margin-right: 10px;
+    display: flex;
+    padding: 2%;
+  }
+  .ContactInfo .icon p{
+    margin-left: 4%;
+  }
+  
+
+  .SocialLinks {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .SocialLinks a {
+    padding: 1rem;
+    display: inline-block;
+    margin-right: 10px;
+    color: #555;
+    font-size: 24px;
+  }
+  
+  .SocialLinks a:hover {
+    color: #b40a5c;
+  }
+  
+  .ContactRight {
+    flex-grow: 1;
+    margin-left: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #555;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0b0808;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button.btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button.btn:hover {
+    background-color: #0b9b47;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .ContactForm {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 30px;
+    }
+  
+    .ContactInfo {
+      margin-right: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      flex-basis: auto;
+    }
+  
+    .ContactInfo .icon {
+      margin-right: 0;
+      margin-top: 2%;
+      font-size: 24px;
+      padding: 4px;
+    }
+  
+    .ContactInfo .icon p {
+      margin-left: 15px;
+    }
+  
+    .SocialLinks {
+      justify-content: center;
+    }
+  
+    .SocialLinks a {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  
+    .ContactRight {
+      margin-left: 0;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      margin-bottom: 10px;
+    }
+  }
